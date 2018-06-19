@@ -1,0 +1,21 @@
+*-debug.log
+*-error.log
+.oclif.manifest.json
+/dist
+/lib
+/package-lock.json
+/tmp
+node_modules
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# test profile files #
+force-app/**
