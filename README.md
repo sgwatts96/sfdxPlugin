@@ -31,11 +31,10 @@ USAGE
 <!-- usagestop -->
 <!-- commands -->
 * [`clean clean:profile`](#clean-cleanprofile)
-* [`clean hello:org [FILE]`](#clean-helloorg-file)
 
 ## `clean clean:profile`
 
-Prints a greeting and your org id(s)!
+Removes all profile attributes except layout assignments and select user permissions
 
 ```
 USAGE
@@ -47,34 +46,6 @@ OPTIONS
 ```
 
 _See code: [src/commands/clean/profile.ts](https://github.com/Desktop/clean/blob/v0.0.0/src/commands/clean/profile.ts)_
-
-## `clean hello:org [FILE]`
-
-Prints a greeting and your org id(s)!
-
-```
-USAGE
-  $ clean hello:org [FILE]
-
-OPTIONS
-  -f, --force                                      example boolean flag
-  -n, --name=name                                  name to print
-  -u, --targetusername=targetusername              username or alias for the target org; overrides default target org
-  -v, --targetdevhubusername=targetdevhubusername  username or alias for the dev hub org; overrides default dev hub org
-  --apiversion=apiversion                          override the api version used for api requests made by this command
-  --json                                           format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)   logging level for this command invocation
-
-EXAMPLES
-  $ sfdx hello:org --targetusername myOrg@example.com --targetdevhubusername devhub@org.com
-     Hello world! This is org: MyOrg and I will be around until Tue Mar 20 2018!
-     My hub org id is: 00Dxx000000001234
-  
-  $ sfdx hello:org --name myname --targetusername myOrg@example.com
-     Hello myname! This is org: MyOrg and I will be around until Tue Mar 20 2018!
-```
-
-_See code: [src/commands/hello/org.ts](https://github.com/Desktop/clean/blob/v0.0.0/src/commands/hello/org.ts)_
 <!-- commandsstop -->
 <!-- debugging-your-plugin -->
 # Debugging your plugin
